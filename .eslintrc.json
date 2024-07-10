@@ -1,0 +1,4 @@
+{
+  "extends": "next/core/web" // Or "next" for older versions
+  // ... other ESLint options
+}

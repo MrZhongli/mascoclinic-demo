@@ -1,0 +1,17 @@
+.sidebarLink::after {
+    content: '';
+    width: 6px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #7879F1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 300ms;
+}
+
+.sidebarLink:hover::after {
+    transform: scaleY(1);
+}

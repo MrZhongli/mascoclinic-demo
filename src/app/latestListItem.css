@@ -1,0 +1,15 @@
+.item {
+    .open-icon {
+        opacity: 0;
+    }
+
+    &:hover {
+        .info-container {
+            background-color: var(--secondary-600);
+        }
+
+        .open-icon {
+            opacity: 1;
+        }
+    }
+}

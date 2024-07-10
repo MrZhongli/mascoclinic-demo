@@ -1,0 +1,35 @@
+.text::after {
+    content: '';
+    animation: loadingText 1s linear infinite;
+}
+
+@keyframes loadingText {
+    0% {
+        content: '.';
+    }
+
+    50% {
+        content: '..';
+    }
+
+    100% {
+        content: '...';
+    }
+}
+
+.loadingBar::after {
+    width: 50%;
+    height: 100%;
+    display: block;
+    animation: loadingBar 2.5s ease-in-out infinite;
+}
+
+@keyframes loadingBar {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(500%);
+    }
+}
