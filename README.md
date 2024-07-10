@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Configuración del Entorno
+Antes de ejecutar el programa, asegúrate de crear un archivo .env.local en la raíz del proyecto y establecer las siguientes claves:
+
+makefile
+## Copiar código
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3000/app/api/
+NEXTAUTH_SECRET=
+JWT_SECRET=
+
+NEXT_PRIVATE_EMAIL=
+NEXT_PRIVATE_PASSWORD=
+Asegúrate de reemplazar los valores de NEXTAUTH_SECRET, JWT_SECRET, NEXT_PRIVATE_EMAIL y NEXT_PRIVATE_PASSWORD con las claves y valores adecuados según tus necesidades de configuración.
